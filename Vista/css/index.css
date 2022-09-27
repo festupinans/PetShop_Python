@@ -1,0 +1,51 @@
+/*Configura el letrero principal*/
+#front{
+    width: 100%;
+}
+
+.contenido1{
+    position: absolute;
+    width: 55%;
+    top: 25%;
+    left: 7%;
+}
+
+
+/*Configura la imagen del perro*/
+.pet{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    right: 0;
+    bottom: 0;
+}
+
+#pet_id{
+    width: 100%;
+}
+
+
+/*Maneja el texto inferior*/
+.admi{
+    background-color: #3F223B;
+    border-radius: 30px;
+    position: absolute;
+    top: 78%;
+    left: 10%;
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.eti{
+    background-color: aqua;
+    position: absolute;
+    top: 80%;
+    
+}

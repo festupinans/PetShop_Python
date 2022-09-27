@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Ubicación, dimensiones y decoración del menu*/
+.menu{  
+    position: fixed;
+    width: 70%;
+    height: 10%;
+    top: 5%;
+    left: 5%;
+}
+
+nav{
+    padding-top: 1.5%;
+}
+
+.menu nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu nav ul li{
+    float: left;
+    margin-right: 0.5%;
+}
+
+.menu nav ul li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu nav ul li a:hover{
+    background-color: #3F223B;
+    border-radius: 30px;
+}
+
+#vertical_line{
+	width: 1px;
+	height: 15px;
+	background-color: white;
+    margin-top: 13px;
+}
+
+
+/*Ubica la posición y dimensiones del logo*/
+.logo{
+    position: fixed;
+    left: 68%;
+    width: 30%;
+    height: 20%;
+}
+
+.logo img{
+    width: 70%;
+    padding-left: 15%;
+    padding-top: 3%;
+}
+
