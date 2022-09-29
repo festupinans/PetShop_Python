@@ -5,7 +5,7 @@ try:
     conexion= mysql.connector.connect(
         host='localhost',
         port='3306',
-        user='Pachodb',
+        user='Pacho',
         password='032620',
         db='world',
         auth_plugin='mysql_native_password'

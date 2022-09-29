@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="Header2.html">
-    <title>PetShop</title>
+    
+    <!-- Enlaces CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Herader2.css')}}">
+
+    <title>{% block title%} {% endblock %}</title>
     
     <!-- Encabezado con los enlaces -->
-
-    <link rel="stylesheet" href="css/Herader2.css">
     <div class="menu">
         <nav>
             <ul>
                 <li>
-                    <a href="/Vista/index.html">
+                    <a href="{{ url_for('principal') }}">
                         <i></i>Inicio
                     </a>        
                 </li>   
@@ -26,7 +27,7 @@
                 </li>
                 
                 <li>
-                    <a href="/Vista/Usuarios.html">
+                    <a href="{{ url_for('Usuarios') }}">
                         <i></i>Usuarios
                     </a>    
                 </li>
@@ -36,7 +37,7 @@
                 </li>
 
                 <li>
-                    <a href="Clientes.html">
+                    <a href="{{ url_for('Clientes') }}">
                         <i></i>Clientes
                     </a>
                 </li>
@@ -46,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a href="Proveedores.html">
+                    <a href="{{ url_for('Proveedores') }}">
                         <i></i>Proveedores
                     </a>
                 </li>
@@ -56,7 +57,7 @@
                 </li>
 
                 <li>
-                    <a href="Productos.html">
+                    <a href="{{ url_for('Productos') }}">
                         <i></i>Productos
                     </a>
                 </li>
@@ -66,7 +67,7 @@
                 </li>
 
                 <li>
-                    <a href="Ventas.html">
+                    <a href="{{ url_for('Ventas') }}">
                         <i></i>Ventas
                     </a>
                 </li>
@@ -76,7 +77,7 @@
                 </li>
 
                 <li>
-                    <a href="Reportes.html">
+                    <a href="{{ url_for('Reportes') }}">
                         <i></i>Reportes
                     </a>
                 </li>
@@ -96,25 +97,15 @@
         
 
     <div class="logo">
-        <img src="img/New_Logo.png"/>
+        <img src="static/img/New_Logo.png"/>
     </div>
-
 <!-- Fin del encabezado con los enlaces -->
-
 
 </head>
 <body>
-    <div class="contenido1">
-        <img src="/Vista/img/Front.png" id="front">
-    </div>
+    {% block body %}
 
-    <div class="pet">
-        <img src="/Vista/img/pet_dog.gif" id="pet_id">
-    </div>
-
-    <div class="admi">
-        <h1>Pagina - versión administrativa</h1>
-    </div>
-
+    {% endblock %}
 </body>
+
 </html>
